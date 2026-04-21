@@ -9,10 +9,8 @@ import Check from "../assets/shared/icon-check.svg";
 import type { Product } from "../types";
 
 export default function New({
-  products,
   setProducts,
 }: {
-  products: Product[];
   setProducts: React.Dispatch<React.SetStateAction<Product[]>>;
 }) {
   const navigate = useNavigate();
@@ -158,8 +156,17 @@ export default function New({
         ></textarea>
 
         <div className="buttons">
-          <button className="cancel" onClick={() => {navigate("/");}}>Cancel</button>
-          <button className="add" onClick={handleCreate}>Add Feedback</button>
+          <button
+            className="cancel"
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            Cancel
+          </button>
+          <button className="add" onClick={handleCreate}>
+            Add Feedback
+          </button>
         </div>
       </div>
     </div>

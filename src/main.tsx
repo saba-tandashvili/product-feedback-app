@@ -120,7 +120,7 @@ export function AppWrapper() {
     },
     {
       path: "/product/new",
-      element: <New products={products} setProducts={setProducts}/>,
+      element: <New setProducts={setProducts}/>,
     },
     {
       path: "/product/:id/edit",
