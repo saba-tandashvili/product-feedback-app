@@ -57,7 +57,7 @@ export default function Edit({
       </header>
 
       <div className="edit-container">
-        <img src={Editf} alt="" className="image" />
+        <img src={Editf} alt="" className="icon" />
         <h1>Editing '{title}' </h1>
 
         <div className="info">

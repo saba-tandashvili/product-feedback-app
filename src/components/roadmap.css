@@ -262,3 +262,87 @@ a {
   letter-spacing: -0.22px;
   color: #3a4374;
 }
+
+.switch {
+  display: none;
+  width: 100%;
+  justify-content: space-evenly;
+  border-bottom: solid 1px #8c92b3;
+  padding-bottom: 20px;
+}
+
+.switch h3 {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #3a4374;
+  opacity: 40%;
+  cursor: pointer;
+}
+
+.switch .in-progress{
+  position: relative;
+}
+
+.switch .planned{
+  position: relative;
+}
+
+.switch .live{
+  position: relative;
+}
+
+.switch .in-progress div{
+  height: 4px;
+  width: 100%;
+  background-color: #AD1FEA;
+  position: absolute;
+  bottom: -20px;
+}
+
+.switch .planned div{
+  height: 4px;
+  width: 100%;
+  background-color: #F49F85;
+  position: absolute;
+  bottom: -20px;
+}
+
+.switch .live div{
+  height: 4px;
+  width: 100%;
+  background-color: #62BCFA;
+  position: absolute;
+  bottom: -20px;
+}
+
+.switch .active-selection{
+  opacity: 100%;
+}
+
+@media (max-width: 1160px) {
+  .roadmap-whole {
+    padding-top: 0;
+  }
+
+  .roadmap-container{
+    min-height: 100vh;
+  }
+
+  .roadmap-whole header {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .roadmap-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .switch {
+    display: flex;
+  }
+}

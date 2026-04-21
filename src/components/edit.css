@@ -14,7 +14,7 @@ body {
   margin: 0;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -27,45 +27,46 @@ a{
   align-items: center;
   flex-direction: column;
   padding-top: 100px;
+  padding-bottom: 40px;
   gap: 30px;
 }
 
-.edit-whole header{
-    width: 540px;
-    margin-bottom: 50px;
+.edit-whole header {
+  width: 540px;
+  margin-bottom: 50px;
 }
 
-.back:hover{
+.back:hover {
   text-decoration: underline;
 }
 
-.edit-container{
-    height: auto;
-    width: 540px;
-    border-radius: 10px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding-top: 70px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
+.edit-container {
+  height: auto;
+  width: 540px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 70px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
 }
 
-.edit-container .image{
-    height: 56px;
-    width: 56px;
-    position: absolute;
-    top: -3%;
-    left: 10%;
+.edit-container .icon {
+  height: 56px;
+  width: 56px;
+  position: absolute;
+  top: -3%;
+  left: 10%;
 }
 
-.edit-container h1{
-    font-size: 24px;
-    letter-spacing: -0.33px;
-    color: #3A4374;
-    margin-bottom: 70px;
+.edit-container h1 {
+  font-size: 24px;
+  letter-spacing: -0.33px;
+  color: #3a4374;
+  margin-bottom: 70px;
 }
 
 .edit-container .info {
@@ -116,7 +117,7 @@ a{
   cursor: pointer;
 }
 
-.edit-container .category:hover{
+.edit-container .category:hover {
   border: solid 2px #4661e6;
   transition: none;
 }
@@ -127,7 +128,7 @@ a{
   cursor: pointer;
 }
 
-.category-div{
+.category-div {
   position: relative;
 }
 
@@ -156,7 +157,7 @@ a{
   align-items: center;
 }
 
-.edit-container .category-div .dropdown p:hover{
+.edit-container .category-div .dropdown p:hover {
   color: #ad1fea;
 }
 
@@ -193,62 +194,133 @@ a{
   outline: none;
 }
 
-.edit-container .buttons{
-    display: flex;
-    justify-content: space-between;
+.edit-container .buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.edit-container .buttons .right {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.edit-container .buttons .delete {
+  height: 44px;
+  width: 93px;
+  border-radius: 10px;
+  border: none;
+  background-color: #d73737;
+  font-size: 14px;
+  font-weight: bold;
+  color: #f2f4fe;
+  cursor: pointer;
+}
+
+.edit-container .buttons .delete:hover {
+  background-color: #e98888;
+}
+
+.edit-container .buttons .right .cancel {
+  height: 44px;
+  width: 93px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3a4374;
+  font-weight: bold;
+  font-size: 14px;
+  color: #f2f4fe;
+  cursor: pointer;
+}
+
+.edit-container .buttons .right .cancel:hover {
+  background-color: #656ea3;
+}
+
+.edit-container .buttons .right .add {
+  height: 44px;
+  width: 144px;
+  background-color: #ad1fea;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #f2f4fe;
+  cursor: pointer;
+}
+
+.edit-container .buttons .right .add:hover {
+  background-color: #c46cf0;
+}
+
+@media (max-width: 630px) {
+  .edit-whole header {
+    width: 430px;
+  }
+
+  .edit-container {
+    width: 430px;
+  }
+
+  .edit-container .category {
     width: 100%;
-}
+  }
 
-.edit-container .buttons .right{
+  .edit-container .category-div .dropdown {
+    width: 100%;
+  }
+
+  .edit-container input,
+  .edit-container .big-input {
+    width: 100%;
+  }
+
+  .edit-container .buttons {
+    height: 162px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .edit-container .buttons .delete, .edit-container .buttons .right .cancel, .edit-container .buttons .right .add{
+    width: 100%;
+  }
+
+  .edit-container .buttons .right{
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 
-.edit-container .buttons .delete{
-    height: 44px;
-    width: 93px;
-    border-radius: 10px;
-    border: none;
-    background-color: #D73737;
-    font-size: 14px;
-    font-weight: bold;
-    color: #f2f4fe;
-    cursor: pointer;
-}
+@media (max-width: 530px) {
+  .edit-whole header {
+    width: 327px;
+  }
 
-.edit-container .buttons .delete:hover{
-    background-color: #E98888;
-}
+  .edit-container {
+    width: 327px;
+    padding: 20px;
+    padding-top: 40px;
+  }
 
-.edit-container .buttons .right .cancel{
-    height: 44px;
-    width: 93px;
-    border: none;
-    border-radius: 10px;
-    background-color: #3A4374;
-    font-weight: bold;
-    font-size: 14px;
-    color: #f2f4fe;
-    cursor: pointer;
-}
+  .edit-container .icon {
+    height: 40px;
+    width: 40px;
+    top: -3%;
+  }
 
-.edit-container .buttons .right .cancel:hover{
-    background-color: #656ea3;
-}
+  .edit-container h1 {
+    font-size: 18px;
+  }
 
-.edit-container .buttons .right .add{
-    height: 44px;
-    width: 144px;
-    background-color: #AD1FEA;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 14px;
-    color: #f2f4fe;
-    cursor: pointer;
-}
+  .edit-container .info h3 {
+    font-size: 13px;
+  }
 
-.edit-container .buttons .right .add:hover{
-    background-color: #c46cf0;
+  .edit-container .info p {
+    font-size: 13px;
+  }
 }

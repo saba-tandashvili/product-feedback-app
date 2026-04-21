@@ -26,6 +26,7 @@ a {
   align-items: center;
   flex-direction: column;
   padding-top: 100px;
+  padding-bottom: 40px;
   gap: 30px;
 }
 
@@ -35,7 +36,7 @@ a {
 }
 
 .create-new-feedback {
-  height: 657px;
+  height: auto;
   width: 540px;
   background-color: white;
   padding: 40px;
@@ -218,4 +219,57 @@ a {
 
 .create-new-feedback .buttons .add:hover {
   background-color: #c75af6;
+}
+
+@media (max-width: 630px) {
+  .new-whole header {
+    width: 430px;
+  }
+
+  .create-new-feedback {
+    width: 430px;
+  }
+
+  .create-new-feedback .category {
+    width: 100%;
+  }
+
+  .create-new-feedback .category-div .dropdown {
+    width: 100%;
+  }
+
+  .create-new-feedback input,
+  .create-new-feedback .big-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 530px) {
+  .new-whole header {
+    width: 327px;
+  }
+
+  .create-new-feedback {
+    width: 327px;
+    padding: 20px;
+    padding-top: 40px;
+  }
+
+  .create-new-feedback .icon {
+    height: 40px;
+    width: 40px;
+    top: -3%;
+  }
+
+  .create-new-feedback h1 {
+    font-size: 18px;
+  }
+
+  .create-new-feedback .info h3 {
+    font-size: 13px;
+  }
+
+  .create-new-feedback .info p {
+    font-size: 13px;
+  }
 }
