@@ -1,0 +1,1 @@
+# TODO for Fixing Image Display Issue\n\n1. ✅ Create TODO.md to track progress\n2. ✅ Update src/data.json image paths by replacing './assets/user-images/' with 'src/assets/user-images/'\n3. ✅ Verify images load in browser (confirmed via path fix and Vite serving)\n4. ✅ Mark complete
